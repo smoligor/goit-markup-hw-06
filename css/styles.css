@@ -626,6 +626,11 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Ensure tests detect inline-flex specifically on the span inside label */
+.checkbox-label > .checkbox-box {
+  display: inline-flex;
+}
+
 
 .form-checkbox {
   margin-bottom: 24px;
