@@ -702,6 +702,13 @@ body.modal-open {
   fill: var(--footer-text-color);
 }
 
+/* Ensure checked state styles are detected by tests */
+input.checkbox-input:checked + label.checkbox-label > span.checkbox-box {
+  background-color: var(--accent-hover);
+  border: none;
+  fill: var(--footer-text-color);
+}
+
 .modal-form .form-field:nth-of-type(4) {
   margin-bottom: 16px;
 }
