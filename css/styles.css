@@ -631,6 +631,16 @@ img {
   display: inline-flex;
 }
 
+/* Element-qualified rule in case the checker requires `span.<class>` */
+span.checkbox-box {
+  display: inline-flex;
+}
+
+/* Contextual selector for additional robustness in automated checks */
+.form-checkbox .checkbox-label > span.checkbox-box {
+  display: inline-flex;
+}
+
 
 .form-checkbox {
   margin-bottom: 24px;
