@@ -1,8 +1,8 @@
 /* ================= GLOBAL STYLES ================= */
 :root {
   --footer-text-color: #F4F4FD;
-  --icon-fill: #f4f4fd; /* for tests fill variable */
-  --feature-icon-scale: 3; /* increased scale for top feature icons */
+  --icon-fill: #f4f4fd;
+  --feature-icon-scale: 3;
   --accent: #4d5ae5;
   --accent-hover: #404bbf;
   --bg-dark: #2e2f42;
@@ -18,7 +18,6 @@ body {
   background-color: #FFFFFF;
 }
 
-/* Reset margins and paddings */
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
@@ -37,14 +36,12 @@ img {
   height: auto;
 }
 
-/* Container */
 .container {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-/* Section spacing */
 .section {
   padding: 120px 0;
   max-width: 1440px;
@@ -52,7 +49,6 @@ img {
   margin-right: auto;
 }
 
-/* Visually hidden (for accessibility) */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -143,7 +139,7 @@ img {
   background-color: var(--bg-dark);
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero-bg.jpg); /* ensure .jpg for test */
+    url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -274,7 +270,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
-  align-items: center; /* ensures circles line up */
+  align-items: center;
 }
 .social-item {
   width: 40px;
@@ -296,7 +292,7 @@ img {
 }
 .social-icon {
   fill: var(--icon-fill, #f4f4fd);
-  transform: scale(3); /* FIX: Visual scaling */
+  transform: scale(3);
 }
 
 /* ================= PORTFOLIO SECTION ================= */
@@ -435,6 +431,8 @@ img {
   font-weight: 500;
   font-size: 16px;
   color: var(--light);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .subscribe-form {
   display: flex;
@@ -447,14 +445,16 @@ img {
   background-color: transparent;
   border-radius: 4px;
   padding: 8px 16px;
+  padding-left: 16px;
   color: var(--light);
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: border-color var(--transition), box-shadow var(--transition);
 }
 .subscribe-input::placeholder {
-  color: var(--light);
+  color: #ffffff;
 }
 .subscribe-input:focus {
   outline: none;
@@ -462,18 +462,20 @@ img {
   box-shadow: 0 0 0 3px rgba(77, 90, 229, 0.2);
 }
 .subscribe-button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 16px;
+  justify-content: center;
   min-width: 165px;
   height: 40px;
   border: none;
   border-radius: 4px;
   padding: 8px 24px;
   background-color: var(--accent);
-  color: var(--light);
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
   transition: background-color var(--transition), box-shadow var(--transition);
@@ -485,6 +487,7 @@ img {
 }
 .subscribe-icon {
   fill: var(--icon-fill);
+  margin-left: 16px;
 }
 
 /* ================= BACKDROP & MODAL ================= */
