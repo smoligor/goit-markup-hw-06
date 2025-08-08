@@ -695,4 +695,4 @@ body.modal-open {
   color: var(--accent);
 }
 
-span.checkbox-box{display:inline-flex;}
+.checkbox-label span { display: inline-flex; }
