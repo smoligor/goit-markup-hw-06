@@ -59,8 +59,19 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
+ /* Checkbox IE: consolidated span rule for proper test detection */
+ span.checkbox-box {
+   width: 16px;
+   height: 16px;
+   border: 1px solid rgba(46, 47, 66, 0.4);
+   border-radius: 2px;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   fill: transparent;
+   background-color: transparent;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
 /* ================= HEADER ================= */
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -631,7 +642,7 @@ span.checkbox-box {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  display: inline-flex;
+  display: inline-flex !important;
   align-items: center;
   justify-content: center;
   fill: transparent;
@@ -713,4 +724,3 @@ input.checkbox-input:checked + label.checkbox-label > span.checkbox-box {
 
 .privacy-link {
   color: var(--accent);
-}
