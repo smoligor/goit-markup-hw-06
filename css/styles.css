@@ -612,8 +612,8 @@ img {
   box-shadow: 0 0 0 3px rgba(77, 90, 229, 0.2);
 }
 
-
-.checkbox-box, span.checkbox-box {
+/* ===== THIS BLOCK IS CHANGED ===== */
+span.checkbox-box {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -625,7 +625,7 @@ img {
   background-color: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/* ===== END OF CHANGED BLOCK ===== */
 
 .form-checkbox {
   margin-bottom: 24px;
@@ -694,4 +694,3 @@ body.modal-open {
 .privacy-link {
   color: var(--accent);
 }
-
