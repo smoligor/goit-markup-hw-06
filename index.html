@@ -27,13 +27,9 @@
           <a class="logo" href="./index.html">
             Web<span class="logo-accent">Studio</span>
           </a>
-          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>
-            <span class="menu-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Open menu</span>
-          </button>
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-link current" href="./index.html">Studio</a>
+              <a class="nav-link current" aria-current="page" href="./index.html">Studio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="">Portfolio</a>
@@ -49,10 +45,14 @@
               <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li class="contacts-item">
-              <a class="contacts-link" href="tel:+110001111111">+11 (000) 111‑11‑11</a>
+              <a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>
+          <span class="menu-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Open menu</span>
+        </button>
       </div>
     </header>
     <!-- Header: end -->
@@ -75,7 +75,7 @@
           <ul class="features-list">
             <li class="features-item">
               <div class="features-icon-container">
-                <svg class="features-icon" width="64" height="64">
+                <svg class="features-icon" preserveAspectRatio="xMidYMid slice">
                   <use href="./images/icons.svg#icon-Icon-1"></use>
                 </svg>
               </div>
@@ -86,7 +86,7 @@
             </li>
             <li class="features-item">
               <div class="features-icon-container">
-                <svg class="features-icon" width="64" height="64">
+                <svg class="features-icon" preserveAspectRatio="xMidYMid slice">
                   <use href="./images/icons.svg#icon-Icon-2"></use>
                 </svg>
               </div>
@@ -97,7 +97,7 @@
             </li>
             <li class="features-item">
               <div class="features-icon-container">
-                <svg class="features-icon" width="64" height="64">
+                <svg class="features-icon" preserveAspectRatio="xMidYMid slice">
                   <use href="./images/icons.svg#icon-Icon-3"></use>
                 </svg>
               </div>
@@ -108,19 +108,21 @@
             </li>
             <li class="features-item">
               <div class="features-icon-container">
-                <svg class="features-icon" width="64" height="64">
+                <svg class="features-icon" preserveAspectRatio="xMidYMid slice">
                   <use href="./images/icons.svg#icon-Icon-4"></use>
                 </svg>
               </div>
               <h3 class="features-title">Technologies</h3>
               <p class="features-text">
-                Design practice focused on digital experiences. We bring forth a deep passion for problem‑solving.
+                Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
               </p>
             </li>
           </ul>
         </div>
       </section>
       <!-- Features Section: end -->
+
+      
 
       <!-- Team Section: start -->
       <section class="team section">
@@ -561,7 +563,7 @@
       </ul>
       <address class="mobile-contacts">
         <ul class="mobile-contacts-list">
-          <li class="mobile-contacts-item"><a class="mobile-contacts-phone" href="tel:+110001111111">+11 (000) 111‑11‑11</a></li>
+          <li class="mobile-contacts-item"><a class="mobile-contacts-phone" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
           <li class="mobile-contacts-item"><a class="mobile-contacts-email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         </ul>
       </address>
@@ -590,7 +592,7 @@
     </div>
   </div>
 
-  <script src="./js/modal.js"></script>
-  <script src="./js/mobile-menu.js"></script>
+  <script defer src="./js/modal.js"></script>
+  <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
